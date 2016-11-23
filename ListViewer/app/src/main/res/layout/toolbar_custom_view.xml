@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+
+
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:id="@+id/title"
+        android:gravity="center_horizontal"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:layout_marginRight="55dp"
+        android:layout_centerVertical="true"
+
+        />
+
+<Button
+    android:id="@+id/create_table"
+    android:text="Create"
+    android:textColor="#FFFFFF"
+    android:textSize="15sp"
+    android:layout_width="100dp"
+    android:layout_height="50dp"
+    android:layout_alignParentRight="true"
+    android:background="@drawable/generate_table_btn_bg"
+    android:layout_gravity="center_vertical"
+    android:textAllCaps="false"
+    android:layout_marginRight="10dp"
+    />
+
+
+
+
+
+</RelativeLayout>
+
+
+    <!--  android:background="#FFFF00"-->
