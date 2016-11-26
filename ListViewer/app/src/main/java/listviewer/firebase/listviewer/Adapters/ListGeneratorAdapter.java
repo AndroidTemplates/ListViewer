@@ -423,7 +423,12 @@ public class ListGeneratorAdapter extends RecyclerView.Adapter <ListGeneratorAda
             }else if(widgetDTO.getWidgetType().equalsIgnoreCase("Rating Bar")){
                 RatingBar ratingBar = new RatingBar(context, null, android.R.attr.ratingBarStyleSmall);
                 ratingBar.setId(position);
-                row2.addView(ratingBar);
+               // row2.addView(ratingBar);
+
+                LinearLayout ratingBarLayout = new LinearLayout(context);
+                ratingBarLayout.addView(ratingBar);
+                setWeightForViewGroup(ratingBarLayout);
+                row2.addView(ratingBarLayout);
             }
         }
 
@@ -453,7 +458,12 @@ public class ListGeneratorAdapter extends RecyclerView.Adapter <ListGeneratorAda
             }else if(widgetDTO.getWidgetType().equalsIgnoreCase("Rating Bar")){
                 RatingBar ratingBar = new RatingBar(context, null, android.R.attr.ratingBarStyleSmall);
                 ratingBar.setId(position);
-                row3.addView(ratingBar);
+              //  row3.addView(ratingBar);
+
+                LinearLayout ratingBarLayout = new LinearLayout(context);
+                ratingBarLayout.addView(ratingBar);
+                setWeightForViewGroup(ratingBarLayout);
+                row3.addView(ratingBarLayout);
             }
         }
 
@@ -483,7 +493,12 @@ public class ListGeneratorAdapter extends RecyclerView.Adapter <ListGeneratorAda
             }else if(widgetDTO.getWidgetType().equalsIgnoreCase("Rating Bar")){
                 RatingBar ratingBar = new RatingBar(context, null, android.R.attr.ratingBarStyleSmall);
                 ratingBar.setId(position);
-                row4.addView(ratingBar);
+                //row4.addView(ratingBar);
+
+                LinearLayout ratingBarLayout = new LinearLayout(context);
+                ratingBarLayout.addView(ratingBar);
+                setWeightForViewGroup(ratingBarLayout);
+                row4.addView(ratingBarLayout);
 
             }
         }
